@@ -1,0 +1,17 @@
+---
+name: slack-urban_dictionary
+environments:
+  dev:
+    profile: default
+    region: us-east-1
+    policy:
+      resources:
+        - arn: arn:aws:logs:*:*:*
+          actions:
+            - "*"
+lambda:
+  description: Slack slash command to fetch definition of a phrase from UrbanDictionary
+  handler: urban_dictionary.handler
+  runtime: python2.7
+  memory_size: 256
+  timeout: 3

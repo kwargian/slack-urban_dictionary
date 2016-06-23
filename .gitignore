@@ -1,0 +1,9 @@
+*.sample
+*.pyc
+*.swp
+*.swo
+*.ipynb
+.kappa/*
+.ipynb_checkpoints/*
+
+slack-urban_dictionary.zip
