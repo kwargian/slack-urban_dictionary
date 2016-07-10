@@ -24,3 +24,8 @@ The script parses the x-www-form-encoded data passed to it from API Gateway from
 It then searches Urban Dictionary for this term (with `Requests <http://docs.python-requests.org/en/master/>`_) and parses
 the page with `BeautifulSoup <https://www.crummy.com/software/BeautifulSoup/bs4/doc/>`_ to grab the first definition of
 the term and return it to Slack, where it is posted in the channel.
+
+Why do you have external libraries committed in your Git repository?
+--------------------------------------------------------------------
+
+Laziness - I want to be able to simple git pull the repo and then push it to AWS Lambda if I have to work on the project from a different machine.
